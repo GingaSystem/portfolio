@@ -1,0 +1,330 @@
+@charset "UTF-8";
+
+/*
+	tag-level
+*/
+html {
+  font-size: 100%;
+
+}
+
+body {
+  padding: 0;
+  background-color: #fcfcfc;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serifHelvetica, Arial;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*
+	basic structure
+*/
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  color: #666;
+  height: 60px;
+  margin-top: 30px;
+  padding-left: -2px;
+}
+
+.header h1 a:link {
+  color: #000;
+}
+
+.header h1 a:visited {
+  color: #000;
+}
+
+.navigation {
+  /*border-bottom: solid 1px #ccc;*/
+
+}
+
+.navigation a:link,
+.navigation a:visited {
+  color: black;
+}
+
+.navigation a:hover {
+  color: gray;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0 0 8px 0;
+
+}
+
+.navigation ul li {
+  float: left;
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.contents {
+  margin-top: 25px;
+}
+
+.contents h2 {
+  margin-top: 30px;
+  padding-bottom: 5px;
+  /*border-bottom: 1px solid #ccc;*/
+  font-weight: normal;
+}
+
+.contents p {
+  line-height: 15px;
+}
+
+.contents .content {
+  padding-left: 30px;
+  font-size: 90%;
+}
+
+.footer {
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+  font-size: 80%;
+  color: #333;
+}
+
+/*
+    for Top
+*/
+.top_content {
+  text-align: center;
+  margin: 10px 0 30px 0;
+}
+
+.top_content p {
+  font-style: italic;
+}
+
+.top_content img {
+  border-radius: 10px;
+}
+
+.top_content img.top_picture {
+  width: 640px;
+}
+
+#news p {
+  line-height: 15px;
+}
+
+/*
+    for Profile
+*/
+#profile h3 {
+  line-height: 30px;
+}
+
+#profile p {
+  line-height: 12px;
+}
+
+#profile .profile_left {
+  float: left;
+  padding-top: 15px;
+}
+
+#profile .profile_left img {
+  width: 200px;
+}
+
+#profile .profile_right {
+  padding-left: 20px;
+  float: left;
+}
+
+#workexperience ul,
+#education ul {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+#workexperience ul li,
+#education ul li {
+  line-height: 25px;
+}
+
+#workexperience ul li .right,
+#education ul li .right {
+  position: absolute;
+  left: 200px;
+}
+
+#contact {
+  position: relative;
+}
+
+#contact .right {
+  position: absolute;
+  left: 100px;
+}
+
+/*
+    for Publications
+*/
+.publications li {
+  margin-bottom: 10px;
+}
+
+/*
+    for Works
+*/
+.works {
+  padding-left: 15px;
+}
+
+.works .more_works_button {
+  display: block;
+  width: 750px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f4f5f5), to(#dfdddd));
+  background-image: -webkit-linear-gradient(top, #f4f5f5, #dfdddd);
+  background-image: -moz-linear-gradient(top, #f4f5f5, #dfdddd);
+  background-image: -ms-linear-gradient(top, #f4f5f5, #dfdddd);
+  background-image: -o-linear-gradient(top, #f4f5f5, #dfdddd);
+  background-image: linear-gradient(to bottom, #f4f5f5, #dfdddd);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#f4f5f5, endColorstr=#dfdddd);
+}
+
+.works .more_works_button:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d9dddd), top(#c6c3c3));
+  background-image: -webkit-linear-gradient(top, #d9dddd, #c6c3c3);
+  background-image: -moz-linear-gradient(top, #d9dddd, #c6c3c3);
+  background-image: -ms-linear-gradient(top, #d9dddd, #c6c3c3);
+  background-image: -o-linear-gradient(top, #d9dddd, #c6c3c3);
+  background-image: linear-gradient(to bottom, #d9dddd, #c6c3c3);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#d9dddd, endColorstr=#c6c3c3);
+}
+
+.works .work {
+  border: 1px solid #ccc;
+  border-radius: 10px 10px;
+  background: #fff;
+  padding: 10px;
+  margin: 0 20px 10px 0;
+  width: 750px;
+}
+
+.works .work a {
+  color: black;
+}
+
+.works .work a:hover {
+  color: gray;
+}
+
+.works .work .main_image {
+  width: 150px;
+  height: 150px;
+  float: left;
+  border-radius: 10px 10px;
+  overflow: hidden;
+}
+
+.works .work .main_image img {
+  width: 150px;
+  height: 150px;
+}
+
+.works .work .description {
+  float: left;
+  padding: 5px 15px;
+  width: 570px;
+}
+
+.works .work .description h3 {
+  margin: -3px 0 12px;
+  font-size: 150%;
+  line-height: 28px;
+  display: block;
+  height: 55px;
+}
+
+.works .work .description p {
+  margin: 8px 0 0 0;
+}
+
+.works .work .description .term {
+  color: #fff;
+  background: #666;
+  border-radius: 3px;
+  padding: 3px 5px;
+  margin-right: 8px;
+  float: left;
+}
+
+.works .work .description .conf {
+  color: #fff;
+  background: #138B4F;
+  border-radius: 3px;
+  padding: 3px 5px;
+  float: left;
+}
+
+.works .work .description .keyword {
+  color: #fff;
+  background: #A52A2A;
+  border-radius: 3px;
+  padding: 3px 5px;
+  margin-right: 8px;
+  float: left;
+}
+
+/*
+    for each work
+*/
+.work_detail h2 {
+  text-align: center;
+  font-weight: 200;
+  line-height: 30px;
+}
+
+.work_detail h3 {
+  margin-top: 30px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid #ccc;
+}
+
+.work_detail .main_image {
+  text-align: center;
+}
+
+.work_detail .main_image img {
+  border-radius: 10px;
+}
+
+.work_detail .description {
+  padding: 0 30px;
+  line-height: 22px;
+  font-size: 90%;
+}
+
+.work_detail .video {
+  text-align: center;
+}
+
+/*
+    Utility
+*/
+.clear {
+  clear: both;
+}
+
+/*# sourceMappingURL=site.css.map */
